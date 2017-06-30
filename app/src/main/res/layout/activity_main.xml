@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vikas.calculatorapp.MainActivity">
+
+
+    <EditText
+        android:id="@+id/etResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:gravity="top|end"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="56sp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonAC"
+                style="@style/Button"
+                android:onClick="onNumbersEvent"
+                android:text="AC"/>
+
+            <Button
+                android:id="@+id/buttonPlusMinus"
+                style="@style/Button"
+                android:onClick="onNumbersEvent"
+                android:text="+/-"/>
+
+            <Button
+                android:id="@+id/buttonMod"
+                style="@style/Button"
+                android:onClick="onOperationEvent"
+                android:text="%"/>
+
+            <Button
+                android:id="@+id/buttonDel"
+                style="@style/SideButton"
+                android:onClick="onDelEvent"
+                android:text="DEL"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/Button"
+                android:text="7"/>
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/Button"
+                android:text="8"/>
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/Button"
+                android:text="9"/>
+
+            <Button
+                android:id="@+id/buttonDiv"
+                style="@style/SideButton"
+                android:onClick="onOperationEvent"
+                android:text="\u00F7"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Button"
+                android:text="4"/>
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Button"
+                android:text="5"/>
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/Button"
+                android:text="6"/>
+
+            <Button
+                android:id="@+id/buttonMul"
+                style="@style/SideButton"
+                android:onClick="onOperationEvent"
+                android:text="\u00D7"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Button"
+                android:onClick="onNumbersEvent"
+                android:text="1"/>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Button"
+                android:text="2"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Button"
+                android:text="3"/>
+
+            <Button
+                android:id="@+id/buttonSub"
+                style="@style/SideButton"
+                android:onClick="onOperationEvent"
+                android:text="\u2212"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonDot"
+                style="@style/Button"
+                android:text="."/>
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/Button"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/buttonEqual"
+                style="@style/Button"
+                android:onClick="onEqualEvent"
+                android:text="="/>
+
+            <Button
+                android:id="@+id/buttonAdd"
+                style="@style/SideButton"
+                android:onClick="onOperationEvent"
+                android:text="\u002B"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
